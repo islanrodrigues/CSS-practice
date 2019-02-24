@@ -16,7 +16,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	z-index: 2
+	z-index: 2;
 }
 
 .quote .box {
@@ -26,6 +26,7 @@ body {
 	background: #fff;
 	overflow: hidden;
 	transition: .5s;
+	z-index: 2;
 	box-sizing: border-box;
 	padding: 30px;
 	box-shadow: -15px 25px 50px rgba(0, 0, 0, .2);
@@ -34,5 +35,53 @@ body {
 
 .quote .box:hover {
 	box-shadow: -10px 50px 100px rgba(0, 0, 0, .5);
+}
+
+.quote .bg-gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.5s;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+}
+
+.quote .box.box-1:hover ~ .bg-gradient {
+	opacity: 1;
+	background: url(images/braulio.jpg);
+	background-size: 10%;
+} 
+
+.quote .box.box-1:hover {
+	opacity: 1; 
+	background: linear-gradient(#99ff55, #AA0044);
 }	
+
+.quote .box.box-2:hover ~ .bg-gradient {
+	opacity: 1;
+	background: url(images/gandhi.jpg);
+	background-size: 10%;
+} 
+
+.quote .box.box-2:hover {
+	opacity: 1; 
+	background: linear-gradient(#d35f5f, #7f2aff);
+}
+
+.quote .box.box-3:hover ~ .bg-gradient {
+	opacity: 1;
+	background: url(images/clarice-lispector.jpg);
+	background-size: 12%;
+} 	
+
+.quote .box.box-3:hover {
+	opacity: 1; 
+	background: linear-gradient(#ff991f, #ff80b2);
+}
+
+
+
 
