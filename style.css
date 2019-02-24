@@ -101,6 +101,7 @@ body {
 .quote .box.box-1:hover {
 	opacity: 1; 
 	background: linear-gradient(#99ff55, #AA0044);
+	border-radius: 30px;
 }	
 
 .quote .box.box-2:hover ~ .bg-gradient {
@@ -112,6 +113,7 @@ body {
 .quote .box.box-2:hover {
 	opacity: 1; 
 	background: linear-gradient(#d35f5f, #7f2aff);
+	border-radius: 30px;
 }
 
 .quote .box.box-3:hover ~ .bg-gradient {
@@ -123,6 +125,7 @@ body {
 .quote .box.box-3:hover {
 	opacity: 1; 
 	background: linear-gradient(#ff991f, #ff80b2);
+	border-radius: 30px;
 }
 
 
